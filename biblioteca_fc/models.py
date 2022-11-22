@@ -8,7 +8,7 @@ class Aluno(models.Model):
     class Meta: #corrige o nome da classe livros no admin que estava com 's' duplicado
         verbose_name = 'Aluno'
     def __str__(self):
-        return self.nome
+        return self.matricula
 
 class Livro(models.Model):
     titulo = models.CharField(max_length=100)
